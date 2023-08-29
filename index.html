@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=</head">
+    <link rel="stylesheet" href="style.css">
+    <title> form </title>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Hitung Nilai Rata-rata</h2><hr>
+        <form id="gradeForm">
+            <fieldset>
+                <legend><b> Data Mahasiswa </b></legend>
+            <table class="table1" border="0px">
+                <tr>
+                    <td width="155"><label for="nama"> Nama Mahasiswa </label></td>
+                    <td> : </td>
+                    <td><input type="text" id="nama" name="nama" required></td>
+                </tr>
+                <tr>
+                    <td><label for="matkul"> Mata Kuliah </label></td>
+                    <td> : </td>
+                    <td><input type="text" id="matkul" name="matkul" required></td>
+                </tr>
+                <tr>
+                    <td><label for="grade"> Grade </label></td>
+                    <td> : </td>
+                    <td><select id="grade" name="grade" required>
+                        <option value=""> Pilih Grade </option>
+                        <option value="A"> A </option>
+                        <option value="B"> B </option>
+                        <option value="C"> C </option>
+                        <option value="D"> D </option>
+                        <option value="E"> E </option>
+                    </select></td>
+                </tr>
+        </table> 
+        </fieldset>
+        <br>
+            
+            <button type="button" id="hitungButton"> Hitung </button>
+        </form>
+        <fieldset><legend><b> Hasil Data Nilai Mahasiswa </b></legend>
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th> Nama Mahasiswa </th>
+                    <th> Mata Kuliah </th>
+                    <th> Grade </th>
+                    <th> Nilai Rata-rata </th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        </fieldset>
+    </div>
+    <div id="resultTable"></div>
+  </div>
+  
+  <script src="script.js"></script>  
+</body>
+</html>
